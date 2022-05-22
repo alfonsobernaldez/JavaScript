@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="actividad04.js" defer></script>
+</head>
+
+<body>
+
+    <div>
+        <label for="Nombre">Nombre: </label>
+        <input id="Nombre">
+
+        <label for="Color">Color: </label>
+        <input id="Color" placeholder="Escribe un color en ingles">
+
+        <button onclick="addParticipante()">AÑADE PARTICIPANTE</button>
+
+    </div>
+
+
+    <button onclick="finCompeticion()">FINALIZA COMPETICION</button>
+
+    <div>
+        <label for="Posicion">Posicion</label>
+        <input id="Posicion" placeholder="Posicion">
+        <button onclick="borraParticipante()">BORRA PARTICIPANTE</button>
+    </div>
+
+    <div>
+        <label for="Posicion_Final">Posicion Final</label>
+        <input id="Posicion_Final" placeholder="Posicion Final">
+        <button onclick="mueveParticipante()">MUEVE PARTICIPANTE</button>
+        <button onclick="modificaParticipante()">MODIFICA PARTICIPANTE</button>
+    </div>
+
+    <h1>PARTICIPANTES</h1>
+    <ol id="PARTICIPANTES">
+    </ol>
+
+</body>
+
+</html>

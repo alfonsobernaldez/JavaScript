@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 05</title>
+
+    <script src="actividad05.js" defer></script>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <form name="Formulario" action="index.html">
+
+        Nombre Producto: <input type="text" id="inputNombre" onblur="">
+        <n style="color: red;"></n></br>
+
+        Código de Barras: <input type="number" id="inputCodigo">
+        <cb style="color: red;"></cb></br>
+
+        <div id="divFecha">
+            <label for="day">Día</label>
+            <input type="number" id="day" name="day" />
+            <label for="month">Mes</label>
+            <input type="number" id="month" name="month" />
+            <label for="year">Año</label>
+            <input type="number" id="year" name="year" />
+        </div>
+
+        </br>
+        Oferta: <select id="oferta">
+            <option id="oferta">Normal</option>
+            <option id="oferta">2x1</option>
+            <option id="oferta">20%</option>
+            <option id="oferta">10%</option>
+        </select>
+        </br>
+
+        <div>
+            Congelados<input type="radio" name="congelado" id="seleccion"></br>
+            Fruta <input type="radio" name="fruta" id="seleccion"></br>
+            Snack <input type="radio" name="snack" id="seleccion">
+        </div>
+
+        <button onclick="registro()" id="registro">Regístrate</button> <button onclik="limpiaForm()">Limpia
+            Formulario</button>
+
+        <input type="submit" onclick="guardaDatos()" value="Guarda Datos">
+        <input id="recupera" type="submit" onclick="recuperaDatos()" value="Recuperar Datos">
+
+
+        <div>
+            <textarea id="areatexto" cols="60" rows="10"></textarea>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

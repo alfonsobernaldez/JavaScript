@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="actividad03.js" defer></script>
+</head>
+
+
+<body onload="mostrarCoche() , mostrarExtras()">
+    
+    <h1>COCHES DISPONIBLES</h1> <!--POR ALGUNA RAZON NO MUESTRA ESTE H1 DENTRO DEL DIV, EL de extra SI LO HACE-->
+    <div id="mostrarCoche">
+       
+    </div> 
+    
+      
+    <h1>EXTRAS DISPONIBLES</h1>
+    <div id="mostrarExtras">    
+    </div>
+    <div id="mostrarExtras2"></div>
+
+    
+
+
+    <!--
+    <img src='imgs/concha_azul.jpeg'/> 
+    <img src='imgs/estrella.jpeg'/> 
+    -->
+    
+    
+    <!--10. AÑADIR EXTRAS AL COCHE-->
+    <h1> GESTIONA EXTRAS</h1>
+
+
+    <input type="number" id="precio">
+    <select name="extras" id="fotoExtras">
+        <option value="concha_azul">
+            <span id="conchaAzul"> Concha Azul</span>
+        </option>
+
+        <option value="estrella">
+            <span id="extrella">  Estrella </span>
+        </option>
+    </select>
+    <button onclick="annadeExtra()">Add Extra</button>
+
+ 
+
+
+</br>
+
+    <!--11. BORRAR EXTRAS AL COCHE-->
+    <div>
+    Posición a borrar
+    <input type="number" label="numero">
+    <button id="borrar" onclick="">BORRAR</button>
+</div>
+
+<!--12. CREAR UN COCHE-->
+
+<div id="annadeCoche">
+    <h1>CREA UN COCHE DISPONIBLE</h1>
+    <input type="text" id="nombreCoche">
+    <label for="nombreCoche">Nombre</label>
+
+    <input type="number" id="velcoche" >
+    <label for="velcoche">Velocidad</label>
+    km/h 
+    <button onclick="annadeCoche()">ADD COCHE</button>
+</div>
+
+<!--13. ASIGNA EXTRA A COCHE  NO ME FUNCIONA NI EL HTML, NO HACE NADA DE LO LISTADO ABAJO.-->
+
+<div id="asignaExtra"></div>
+
+Extra:
+<select name="extras" type="number" id="eligeExtra">
+    <option value="Concha">Concha</option>
+    <option value="Estrella">Estrella</option>
+</select>
+
+
+
+Nombre Coche:
+<select name="tiposcoches" id="eligeCoche">
+    <opcion></opcion>
+
+</select>
+
+<button>ADD EXTRA COCHE</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
